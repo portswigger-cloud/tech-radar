@@ -1,13 +1,11 @@
 # Motivation
 
-At [Zalando](http://zalando.de), we maintain a [public Tech
-Radar](http://zalando.github.io/tech-radar/) to help our engineering teams
+Heavy inspired/mainly copied from the [Zalando tech radar](https://github.com/zalando/tech-radar) 
+
+At [Portswigger](http://portswigger.net), we maintain a [public Tech
+Radar](https://portswigger-cloud.github.io/tech-radar) to help our engineering teams
 align on technology choices. It is based on the [pioneering work
 by ThoughtWorks](https://www.thoughtworks.com/radar).
-
-This repository contains the code to generate the visualization:
-[`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).
-Feel free to use and adapt it for your own purposes.
 
 ## Usage
 
@@ -28,7 +26,7 @@ Feel free to use and adapt it for your own purposes.
 
 ```js
 radar_visualization({
-  repo_url: "https://github.com/zalando/tech-radar",
+  repo_url: "https://github.com/portswigger-it/tech-radar",
   svg_id: "radar",
   width: 1450,
   height: 1000,
@@ -75,7 +73,7 @@ Entries are positioned automatically so that they don't overlap. The "scale" par
 in adjusting the size of the radar.
 
 As a working example, you can check out `docs/index.html` &mdash; the source of our [public Tech
-Radar](http://zalando.github.io/tech-radar/).
+Radar](https://portswigger-cloud.github.io/helm-charts).
 
 ## Deployment
 
