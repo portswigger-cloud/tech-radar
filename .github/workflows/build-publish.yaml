@@ -26,19 +26,19 @@ jobs:
           verbose: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Verify release directory exists
+      - name: Ensure `release/` is included in `_site/`
         run: |
-          if [ -d "docs/_site/release" ]; then
-            echo "Release directory found:"
-            ls -l docs/_site/release/
+          if [ -d "docs/release" ]; then
+            cp -r docs/release docs/_site/release
+            echo "Copied release/ into _site/"
           else
-            echo "ERROR: Release directory not found!"
+            echo "WARNING: release/ directory does not exist!"
             exit 1
           fi
 
       - name: Find latest radar-x.x.js and copy it
         run: |
-          LATEST_JS=$(ls -v docs/_site/release/radar-*.js | tail -n 1 || echo "")
+          LATEST_JS=$(ls -v docs/_site/release/radar-*.js 2>/dev/null | tail -n 1 || echo "")
           if [ -z "$LATEST_JS" ]; then
             echo "ERROR: No radar-x.x.js file found in docs/_site/release/"
             exit 1
