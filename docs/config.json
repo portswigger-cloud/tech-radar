@@ -107,7 +107,7 @@
     },
     {
       "quadrant": 3,
-      "ring": ,
+      "ring": 1,
       "label": "Java",
       "link": "https://technology.portswigger.net/",
       "active": true,
