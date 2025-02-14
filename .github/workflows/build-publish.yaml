@@ -26,9 +26,23 @@ jobs:
           verbose: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Check for generated radar-x.x.js files
+        run: |
+          if [ -d "docs/_site/release" ]; then
+            echo "Release directory exists."
+            ls -l docs/_site/release/
+          else
+            echo "ERROR: Release directory does not exist. Jekyll may not be generating the radar-x.x.js files."
+            exit 1
+          fi
+
       - name: Find latest radar-x.x.js and copy it
         run: |
-          LATEST_JS=$(ls -v docs/_site/release/radar-*.js | tail -n 1)
+          LATEST_JS=$(ls -v docs/_site/release/radar-*.js 2>/dev/null | tail -n 1 || echo "")
+          if [ -z "$LATEST_JS" ]; then
+            echo "ERROR: No radar-x.x.js file found in docs/_site/release/"
+            exit 1
+          fi
           cp "$LATEST_JS" docs/_site/radar.js
           echo "Using $LATEST_JS as radar.js"
 
