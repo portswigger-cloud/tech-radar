@@ -18,7 +18,7 @@
       "moved": 2
     },
     {
-      "quadrant": 2,
+      "quadrant": 1,
       "ring": 0,
       "label": "Wiz",
       "link": "https://technology.portswigger.net/",
@@ -37,6 +37,78 @@
       "quadrant": 2,
       "ring": 3,
       "label": "JetBrains AI",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 2,
+      "ring": 3,
+      "label": "TeamCity",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Github Actions",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Github Enterprise",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Github.com",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Nexus",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Python",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 3,
+      "ring": 1,
+      "label": "Golang",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 3,
+      "ring": ,
+      "label": "Java",
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
