@@ -1,0 +1,49 @@
+name: Build and Deploy Tech Radar
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build site with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs
+          destination: ./docs/_site
+          future: false
+          verbose: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Find latest radar-x.x.js and copy it
+        run: |
+          LATEST_JS=$(ls -v docs/_site/release/radar-*.js | tail -n 1)
+          cp "$LATEST_JS" docs/_site/radar.js
+          echo "Using $LATEST_JS as radar.js"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./docs/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

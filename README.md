@@ -13,7 +13,7 @@ by ThoughtWorks](https://www.thoughtworks.com/radar).
 
 ```html
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://zalando.github.io/tech-radar/release/radar-0.11.js"></script>
+<script src="radar.js"></script>
 ```
 
 2. insert an empty `svg` tag:
@@ -26,7 +26,7 @@ by ThoughtWorks](https://www.thoughtworks.com/radar).
 
 ```js
 radar_visualization({
-  repo_url: "https://github.com/portswigger-it/tech-radar",
+  repo_url: "https://github.com/portswigger-cloud/tech-radar",
   svg_id: "radar",
   width: 1450,
   height: 1000,
@@ -73,7 +73,7 @@ Entries are positioned automatically so that they don't overlap. The "scale" par
 in adjusting the size of the radar.
 
 As a working example, you can check out `docs/index.html` &mdash; the source of our [public Tech
-Radar](https://portswigger-cloud.github.io/helm-charts).
+Radar](https://portswigger-cloud.github.io/tech-radar).
 
 ## Deployment
 
