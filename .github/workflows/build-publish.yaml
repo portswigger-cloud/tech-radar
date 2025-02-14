@@ -50,3 +50,23 @@ jobs:
           compression-level: 6
           overwrite: false
           include-hidden-files: false
+
+  deploy:
+    runs-on: ubuntu-24.04
+    needs: build
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          timeout: 600000
+          error_count: 10
+          reporting_interval: 5000
+          preview: false
