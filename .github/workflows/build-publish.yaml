@@ -17,28 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run build process (if needed)
-        run: |
-          if [ -f "build.sh" ]; then
-            chmod +x build.sh
-            ./build.sh
-          elif [ -f "package.json" ]; then
-            npm run build || echo "No build script found in package.json"
-          fi
-
-      - name: Ensure release directory exists
-        run: |
-          mkdir -p docs/release
-          cp -r release/* docs/release/ || echo "No release files found"
-
       - name: Build site with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -48,11 +26,21 @@ jobs:
           verbose: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Copy latest radar-x.x.js
+      - name: Verify release directory exists
         run: |
-          LATEST_JS=$(ls -v docs/release/radar-*.js 2>/dev/null | tail -n 1 || echo "")
+          if [ -d "docs/_site/release" ]; then
+            echo "Release directory found:"
+            ls -l docs/_site/release/
+          else
+            echo "ERROR: Release directory not found!"
+            exit 1
+          fi
+
+      - name: Find latest radar-x.x.js and copy it
+        run: |
+          LATEST_JS=$(ls -v docs/_site/release/radar-*.js | tail -n 1 || echo "")
           if [ -z "$LATEST_JS" ]; then
-            echo "ERROR: No radar-x.x.js file found in docs/release/"
+            echo "ERROR: No radar-x.x.js file found in docs/_site/release/"
             exit 1
           fi
           cp "$LATEST_JS" docs/_site/radar.js
