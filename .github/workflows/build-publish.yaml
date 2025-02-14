@@ -70,3 +70,17 @@ jobs:
           error_count: 10
           reporting_interval: 5000
           preview: false
+
+  report-build-status:
+    runs-on: ubuntu-24.04
+    needs: deploy
+
+    steps:
+      - name: Report Build Status
+        run: |
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
+            -F github_run_id="$GITHUB_RUN_ID" \
+            -F conclusion="success"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONCLUSION: success
