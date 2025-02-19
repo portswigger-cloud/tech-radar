@@ -50,7 +50,7 @@
       "moved": 2
     },
     {
-      "quadrant": 1,
+      "quadrant": 2,
       "ring": 0,
       "label": "Github Actions",
       "link": "https://technology.portswigger.net/",
@@ -66,9 +66,9 @@
       "moved": 2
     },
     {
-      "quadrant": 1,
+      "quadrant": 2,
       "ring": 0,
-      "label": "Github. Cloud",
+      "label": "Github Cloud",
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
