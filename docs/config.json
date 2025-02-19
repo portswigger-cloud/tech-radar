@@ -27,7 +27,7 @@
     },
     {
       "quadrant": 2,
-      "ring": 2,
+      "ring": 1,
       "label": "Github Copilot",
       "link": "https://technology.portswigger.net/",
       "active": true,
@@ -59,7 +59,7 @@
     },
     {
       "quadrant": 2,
-      "ring": 0,
+      "ring": 3,
       "label": "Github Enterprise",
       "link": "https://technology.portswigger.net/",
       "active": true,
@@ -68,7 +68,7 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "Github.com",
+      "label": "Github. Cloud",
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
@@ -84,7 +84,55 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "AWS",
+      "label": "Amazon Elastic Kubernetes Service",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Crossplane",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Hashicorp Terraform",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "CloudFormation",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Hashicorp Boundary",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Teleport",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Cloud Development Kit",
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
@@ -109,6 +157,22 @@
       "quadrant": 3,
       "ring": 0,
       "label": "Java",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": ".Net Framework",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Amazon Elastic Container Service",
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
