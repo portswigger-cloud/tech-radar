@@ -5,7 +5,7 @@
       "quadrant": 2,
       "ring": 0,
       "label": "K9S",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://github.com/derailed/k9s",
       "active": true,
       "moved": 2
     },
@@ -13,7 +13,7 @@
       "quadrant": 2,
       "ring": 0,
       "label": "SOPS",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://github.com/getsops/sops",
       "active": true,
       "moved": 2
     },
@@ -21,7 +21,7 @@
       "quadrant": 1,
       "ring": 0,
       "label": "Wiz",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.wiz.io/",
       "active": true,
       "moved": 2
     },
@@ -29,7 +29,7 @@
       "quadrant": 2,
       "ring": 1,
       "label": "Github Copilot",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://github.com/features/copilot",
       "active": true,
       "moved": 2
     },
@@ -37,7 +37,7 @@
       "quadrant": 2,
       "ring": 3,
       "label": "JetBrains AI",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.jetbrains.com/ai/",
       "active": true,
       "moved": 2
     },
@@ -45,7 +45,7 @@
       "quadrant": 2,
       "ring": 3,
       "label": "TeamCity",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.jetbrains.com/teamcity/",
       "active": true,
       "moved": 2
     },
@@ -53,7 +53,7 @@
       "quadrant": 2,
       "ring": 0,
       "label": "Github Actions",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://github.com/features/actions",
       "active": true,
       "moved": 2
     },
@@ -61,7 +61,7 @@
       "quadrant": 2,
       "ring": 3,
       "label": "Github Enterprise",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server",
       "active": true,
       "moved": 2
     },
@@ -69,15 +69,15 @@
       "quadrant": 2,
       "ring": 0,
       "label": "Github Cloud",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://github.com/",
       "active": true,
       "moved": 2
     },
     {
       "quadrant": 2,
       "ring": 0,
-      "label": "Nexus",
-      "link": "https://technology.portswigger.net/",
+      "label": "Sonatype Nexus Repository",
+      "link": "https://www.sonatype.com/products/sonatype-nexus-repository",
       "active": true,
       "moved": 2
     },
@@ -85,7 +85,7 @@
       "quadrant": 1,
       "ring": 0,
       "label": "Amazon Elastic Kubernetes Service",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://aws.amazon.com/eks/",
       "active": true,
       "moved": 2
     },
@@ -93,7 +93,7 @@
       "quadrant": 1,
       "ring": 0,
       "label": "Crossplane",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.crossplane.io/",
       "active": true,
       "moved": 2
     },
@@ -101,7 +101,7 @@
       "quadrant": 2,
       "ring": 3,
       "label": "Hashicorp Terraform",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.terraform.io/",
       "active": true,
       "moved": 2
     },
@@ -109,7 +109,7 @@
       "quadrant": 2,
       "ring": 3,
       "label": "CloudFormation",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://aws.amazon.com/cloudformation/",
       "active": true,
       "moved": 2
     },
@@ -117,7 +117,7 @@
       "quadrant": 2,
       "ring": 3,
       "label": "Hashicorp Boundary",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.hashicorp.com/en/products/boundary",
       "active": true,
       "moved": 2
     },
@@ -125,7 +125,7 @@
       "quadrant": 2,
       "ring": 0,
       "label": "Teleport",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://goteleport.com/",
       "active": true,
       "moved": 2
     },
@@ -133,7 +133,7 @@
       "quadrant": 2,
       "ring": 0,
       "label": "AWS Cloud Development Kit",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://aws.amazon.com/cdk/",
       "active": true,
       "moved": 2
     },
@@ -141,7 +141,7 @@
       "quadrant": 3,
       "ring": 0,
       "label": "Python",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.python.org/",
       "active": true,
       "moved": 2
     },
@@ -149,7 +149,7 @@
       "quadrant": 3,
       "ring": 1,
       "label": "Golang",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://go.dev/",
       "active": true,
       "moved": 2
     },
@@ -157,7 +157,7 @@
       "quadrant": 3,
       "ring": 0,
       "label": "Java",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.java.com/en/",
       "active": true,
       "moved": 2
     },
@@ -165,7 +165,7 @@
       "quadrant": 3,
       "ring": 0,
       "label": ".Net Framework",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://dotnet.microsoft.com/en-us/",
       "active": true,
       "moved": 2
     },
@@ -173,7 +173,7 @@
       "quadrant": 1,
       "ring": 3,
       "label": "Amazon Elastic Container Service",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://aws.amazon.com/ecs/",
       "active": true,
       "moved": 2
     },
@@ -181,7 +181,23 @@
       "quadrant": 1,
       "ring": 0,
       "label": "Azure Entra ID",
-      "link": "https://technology.portswigger.net/",
+      "link": "https://www.microsoft.com/en-gb/security/business/identity-access/microsoft-entra-id",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "Cloud Events",
+      "link": "https://cloudevents.io/",
+      "active": true,
+      "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "https://pulsar.apache.org/",
+      "link": "https://pulsar.apache.org/",
       "active": true,
       "moved": 2
     }
