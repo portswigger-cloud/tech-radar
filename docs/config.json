@@ -176,6 +176,14 @@
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Azure EntraID",
+      "link": "https://technology.portswigger.net/",
+      "active": true,
+      "moved": 2
     }
   ]
 }
