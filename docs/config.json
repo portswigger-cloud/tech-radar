@@ -180,7 +180,7 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "Azure EntraID",
+      "label": "Azure Entra ID",
       "link": "https://technology.portswigger.net/",
       "active": true,
       "moved": 2
