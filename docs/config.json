@@ -200,6 +200,14 @@
       "link": "https://pulsar.apache.org/",
       "active": true,
       "moved": 2
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Continuous Deployment",
+      "link": "https://minimumcd.org/",
+      "active": true,
+      "moved": 2
     }
   ]
 }
