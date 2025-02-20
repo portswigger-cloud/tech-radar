@@ -202,7 +202,7 @@ function radar_visualization(config) {
   }
 
   // adjust with config.scale.
-  config.scale = config.scale || 1;
+  config.scale = window.innerWidth < 768 ? 0.6 : 1;
   var scaled_width = config.width * config.scale;
   var scaled_height = config.height * config.scale;
 

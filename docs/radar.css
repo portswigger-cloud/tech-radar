@@ -23,23 +23,26 @@ h3 {
 #radar {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .content-container {
-  width: 1400px;
+  width: 90%;
+  max-width: 1400px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background: white;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-top: 30px;
   text-align: left;
-  gap: 40px;
+  gap: 20px;
 }
 
 .content-section {
-  width: 48%;
+  width: 100%;
   line-height: 1.5;
 }
 
@@ -59,4 +62,27 @@ h3 {
 
 .hover-underline:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .content-section {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p, li {
+    font-size: 0.9em;
+  }
 }
